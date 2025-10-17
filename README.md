@@ -23,11 +23,16 @@ it easy to keep track of groceries and other shopping needs.
 - HTTP Server (built with native Node.js HTTP module)
 - In-memory storage (array)
 
-  Install dependencies
+  ## Install dependencies
+  
   npm install typescript ts-node @types/node --save-dev
+  
 npx tsc --init
+
 npx tsc
+
 npx ts-node src/server.ts
+
 npm run build
 
 npm start
