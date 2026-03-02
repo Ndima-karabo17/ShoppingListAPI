@@ -25,7 +25,8 @@ it easy to keep track of groceries and other shopping needs.
 
   ## Install dependencies
   
-  npm install typescript ts-node @types/node --save-dev
+- npm install
+- npm install typescript ts-node @types/node --save-dev
   
 npx tsc --init
 
@@ -38,3 +39,31 @@ npm run build
 npm start
 
 npm run dev
+
+
+## API Endpoints
+
+- Base URL http://localhost:3000
+
+| Method | Endpoint           | Description             |
+| ------ | ------------------ | ----------------------- |
+| GET    | /shopping-list     | Get all shopping items  |
+| GET    | /shopping-list/:id | Get a single item by ID |
+| POST   | /shopping-list     | Add a new item          |
+| PUT    | /shopping-list/:id | Update an existing item |
+| DELETE | /shopping-list/:id | Delete an item by ID    |
+
+Example Requests
+-
+
+- Get all items: http://localhost:3000/shoping-list
+- Get single item: http://localhost:3000/shoping-list/1
+- post new item:  curl -X POST http://localhost:3000/shopping-list \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Apples","quantity":5}'
+
+- put update item: curl -X PUT http://localhost:3000/shopping-list/1 \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Green Apples","quantity":10,"bought":true}'
+
+- Delete item:  curl -X DELETE http://localhost:3000/shopping-list/1
