@@ -67,3 +67,6 @@ Example Requests
   -d '{"name":"Green Apples","quantity":10,"bought":true}'
 
 - Delete item:  curl -X DELETE http://localhost:3000/shopping-list/1
+
+## Author
+Ndima Karabo Mhangwani, 2025 - 2026
