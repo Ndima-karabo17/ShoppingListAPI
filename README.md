@@ -27,12 +27,11 @@ it easy to keep track of groceries and other shopping needs.
   
 - npm install
 - npm install typescript ts-node @types/node --save-dev
-  
 npx tsc --init
 
 npx tsc
 
-npx ts-node src/server.ts
+npx tsx src/server.ts
 
 npm run build
 
