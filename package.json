@@ -1,7 +1,6 @@
 {
   "name": "shopping-list-backend",
   "version": "1.0.0",
-  "type": "module",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
@@ -15,6 +14,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "dotenv": "^17.3.1"
+    "dotenv": "^17.3.1",
+    "http": "^0.0.1-security"
   }
 }
