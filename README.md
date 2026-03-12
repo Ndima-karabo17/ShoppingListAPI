@@ -57,9 +57,7 @@ Example Requests
 
 - Get all items: http://localhost:3000/shoping-list
 - Get single item: http://localhost:3000/shoping-list/1
-- post new item:  curl -X POST http://localhost:3000/shopping-list \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Apples","quantity":5}'
+- post new item:  http://localhost:3000/shoping-list
 
 - put update item: curl -X PUT http://localhost:3000/shopping-list/1 \
   -H "Content-Type: application/json" \
